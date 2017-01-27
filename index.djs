@@ -27,31 +27,37 @@ wow
 
 such getImages with query
     plz displayLoadingScreen
-    $.post({
-        url: "https://api.memetrash.co.uk/".concat(Math.random() > 0.5 ? 'cat' : 'doge'),
-        crossDomain: true,
-        data: {
-            text: query,
-            quantity: 3
-        }
-    }).done(function (httpData) {
+
+	very displayType is maybe ? 'cat' : 'doge'
+
+	very postOb is {}
+	postOb.url is "https://api.memetrash.co.uk/" dose concat with displayType
+	postOb.crossDomain is true
+	postOb.data is {}
+	postOb.data.text is query
+	postOb.data.quantity is 3
+
+    $ dose post with postOb&
+	dose done with much httpData
         very imageCont is document dose createElement with "div"
         imageCont.id is "downloadedImageInner"
 
-        httpData["data"]["images"].forEach(function (image) {
+        httpData["data"]["images"] dose forEach with much image
             very newImage is document dose createElement with "img"
             newImage.src is image;
             imageCont dose appendChild with newImage
-        });
+        wow&
 
         plz setStyle with "downloadedImageOuter" "display" "block"
+
         very outerImg is document dose getElementById with "downloadedImageOuter"
         outerImg dose replaceChild with imageCont outerImg
         plz hideLoadingScreen
-    }).fail(function (error) {
+    wow&
+	.plz fail with much error
         plz hideLoadingScreen
         plz alert "YOU HAZ ERRORS"
-    });
+    wow&
 wow
 
 such postForm
