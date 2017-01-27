@@ -59,7 +59,7 @@ such postForm
     rly inputBox.value not ""
         plz getImages with inputBox.value
     but rly
-    	very promptStr is "Enter a value"
+		very promptStr is "Enter a value"
         plz alert with promptStr
     wow
 wow
