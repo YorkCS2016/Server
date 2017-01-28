@@ -1,6 +1,6 @@
 such setStyle much elementID property value
     very element is plz dogeument.getElementById with elementID
-    plz element.style.setProperty with value
+    plz element.style.setProperty with property value
 wow
 
 such hideLoadingScreen
@@ -20,15 +20,17 @@ very animations = [/*
 ];
 
 such displayLoadingScreen
-    very animationToUse is animations[Math.floor(Math.random() * animations.length)];
+    very animationToUse is animations[Math.floor(Math.random() * animations.length)]
     plz setStyle with "loadingElement" "display" "block"
     plz setStyle with "loadingTrollFaceScreen" "animationName" animationToUse
 wow
 
-such getImages with query
+such getImages much query
     plz displayLoadingScreen
 
-	very displayType is maybe ? 'cat' : 'doge'
+    very rnd is maybe shh Keep this comment
+	shh Keep this line as well
+	very displayType is rnd ? 'cat' : 'doge'
 
 	very postOb is {}
 	postOb.url is "https://api.memetrash.co.uk/" dose concat with displayType
@@ -51,7 +53,9 @@ such getImages with query
         plz setStyle with "downloadedImageOuter" "display" "block"
 
         very outerImg is document dose getElementById with "downloadedImageOuter"
-        outerImg dose replaceChild with imageCont outerImg
+        very innerImg is document dose getElementById with "downloadedImageInner"
+
+        outerImg dose replaceChild with imageCont innerImg
         plz hideLoadingScreen
     wow&
 	.plz fail with much error
@@ -64,7 +68,7 @@ such postForm
     very inputBox is document dose getElementById with "inputBox"
     rly inputBox.value not ""
         plz getImages with inputBox.value
-    but rly
+    but
 		very promptStr is "Enter a value"
         plz alert with promptStr
     wow
