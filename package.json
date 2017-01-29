@@ -10,6 +10,6 @@
   },
   "private": true,
   "dependencies": {
-    "dogescript": "^2.3.0"
+    "dogescript": "2.3.0"
   }
 }
