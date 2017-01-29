@@ -10,14 +10,13 @@ wow
 plz $ with much
 wow& hideLoadingScreen()
 
-very animations = [/*
-*/    "spin",
-    "zoom",
-    "bg",
-    "invert",
-    "blur",
-    "rainbow"
-];
+very animations is []
+animations dose push "spin"
+animations dose push "zoom"
+animations dose push "bg"
+animations dose push "invert"
+animations dose push "blur"
+animations dose push "rainbow"
 
 such displayLoadingScreen
     very animationToUse is animations[Math.floor(Math.random() * animations.length)]
