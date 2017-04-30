@@ -1,0 +1,15 @@
+{
+  "name": "meme-generator-web",
+  "version": "1.0.0",
+  "description": "",
+  "main": "compile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublish": "npm run-script build",
+    "build": "webpack -p"
+  },
+  "private": true,
+  "dependencies": {
+    "dogescript": "2.3.0"
+  }
+}
